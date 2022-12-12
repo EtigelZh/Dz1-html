@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <ul type="none">
+        <li ><a href="index.html">Самые мощные телефоны</a></li>      
+        <li><a href="list.html"><b><big>Список самых мощных телефон</big></b></a></li>
+    </ul>
+    <hr>
+
+    <details>
+        <summary> График </summary>
+        <form>
+            <table>
+              <tr>
+                <th>Значениe по оси OX</th>
+                <th>Результат</th>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" name="ox" value="0">Бренд<br>
+                  <input type="radio" name="ox" value="1">Год выпуска<br>
+                  <input type="radio" name="ox" value="3">Количество баллов antutu<br>
+                </td>
+                <td>
+                  <input type="checkbox" name="oy" value="0">Максимальная мощность<br>
+                  <input type="checkbox" name="oy" value="1">Минимальная мощность<br>
+                  <input type="checkbox" name="oy" value="3">Количество моделей<br>
+                </td>
+              </tr>
+            </table>
+            <input type=button value="Построить">
+            <p>Здесь будет график</p>
+        </form>	
+    </details> 
+
+</details> 
+<details>
+    <summary> Фильтр</summary>
+    <form>
+        <p>
+           <label for="structure">Бренд</label>
+		   <input type=text name="structure">
+        </p>
+        <p>
+		    <label for="namep">Название процессора</label>
+            <input type=text name="namep">
+        </p>
+        <p>
+		   <label for="MM">Количество мегапикселей</label>
+          <input type=text name="MM">
+        </p>
+		 <p>
+		   <label for="price">Цена в долларах</label>
+           от <input type=text name="price"> до <input type=text name="ySo">
+        </p>
+ 		 <p>
+		  <label for="yFrom">Год выпуска: </label>
+           от <input type=text name="yFrom"> до <input type=text name="yFo">
+        </p>
+        <p>
+		   <label for="hFrom">Количество баллов:</label>
+           от <input type=text name="hFrom"> до <input type=text name="hTo">
+        </p>
+        <input type=button value="Найти">		
+	</form>	
+</details> 
+
+<details>
+    <summary>Сортировка</summary>
+    <form>
+	  <p>
+          Первый уровень:
+          <select name="sortFirst">
+            <option value="0">Нет</option>
+            <option value="1">Бренд</option>
+            <option value="2">Количество баллов antutu</option>
+            <option value="3">Название процессора</option>
+            <option value="4">Количество мегапикселей в камере</option>
+			<option value="6">Цена в долларах</option>
+ 
+          </select>
+          по убыванию? <input  type="checkbox"  name= "descFirst" >
+        </p>  
+        <p>
+          Второй уровень:
+		  <select name="sortSecond">
+            <option value="0">Нет</option>
+            <option value="1">Бренд</option>
+            <option value="2">Количество баллов antutu</option>
+            <option value="3">Название процессора</option>
+            <option value="4">Количество мегапикселей в камере</option>
+			<option value="6">Цена в долларах</option>
+          </select>
+          по убыванию? <input  type="checkbox"  name= "descSecond" >
+        </p>
+        <p>
+          Третий уровень:
+          <select name="sortThird">
+            <option value="0">Нет</option>
+            <option value="1">Бренд</option>
+            <option value="2">Количество баллов antutu</option>
+            <option value="3">Название процессора</option>
+            <option value="4">Количество мегапикселей в камере</option>
+			<option value="6">Цена в долларах</option>
+          </select>
+          по убыванию? <input  type="checkbox"  name= "descThird" >
+        </p>
+      <input type=button value="Сортировать">		
+	</form>	
+</details> 
+<br>    
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr><th>Название модели</th><th>Бренд</th><th>Год выпуска</th><th>Количество баллов antutu</th><th>Название процессора</th><th>Количество мегапикселей в камере
+    </th><th>Цена в долларах</td></tr>
+        <tr><td>ZTE Nubia Red Magic 6S Pro</td><td>ZTE</td><td>2022</td><td>873 000</td><td>Snapdragon 888 Plus</td><td>108</td><td>835</td></tr>
+        <tr><td>ASUS ROG Phone 5s Pro</td><td>ASUS</td><td>2022</td><td>839 000</td><td>Snapdragon 888 Plus</td><td>108</td><td>663</td></tr>
+        <tr><td>Xiaomi Black Shark 4 Pro</td><td>Xiaomi</td><td>2022</td><td>786 000</td><td>Snapdragon 888</td><td>64</td><td>1116</td></tr>
+        <tr><td>iPhone 13 Pro Max</td><td>Apple</td><td>2022</td><td>842 000</td><td>Apple A15 Bionic</td><td>12</td><td>1499</td></tr>
+        <tr><td>Realme GT</td><td>Realme</td><td>2022</td><td>746 000</td><td> Snapdragon 888</td><td>64</td><td>466</td></tr>
+        <tr><td>Samsung Galaxy S21 Ultra</td><td>Samsung</td><td>2022</td><td>730 000</td><td> Exynos 2100</td><td>108</td><td>1199</td></tr>
+        <tr><td>POCO F3</td><td>POCO</td><td>2022</td><td>683 000</td><td> Snapdragon 870</td><td>64</td><td>349</td></tr>
+        <tr><td>Xiaomi Mi 11T</td><td>Xiaomi</td><td>2022</td><td>642 000</td><td>Dimensity 1200</td><td>48</td><td>625</td></tr>
+        <tr><td>OnePlus 9R</td><td>OnePlus</td><td>2022</td><td>649 000</td><td> Snapdragon 870</td><td>64</td><td>699</td></tr>
+        <tr><td>POCO X3 Pro</td><td>POCO</td><td>2022</td><td>481 000</td><td> Snapdragon 865</td><td>48</td><td>320</td></tr>
+        <tr><td>Xiaomi Redmi Note 10 Pro</td><td>Xiaomi</td><td>2022</td><td>336 000</td><td> Snapdragon 732G</td><td>50</td><td>220</td></tr>
+        <tr><td>Infinix Note 10 Pro</td><td>Infinix</td><td>2022</td><td>320 000</td><td> Snapdragon 732G</td><td>12</td><td>200</td></tr>
+        <tr><td>Asus ROG Phone 6D Ultimate</td><td>Asus</td><td>2022</td><td>1133998</td><td>Dimensity 9000+</td><td>50</td><td>2300</td></tr>
+        <tr><td>Asus ROG Phone 6 Pro</td><td>Asus</td><td>2022</td><td>1122406</td><td>Snapdragon 8+ Gen 1</td><td>50</td><td>2000</td></tr>
+        <tr><td>Asus ROG Phone 6</td><td>Asus</td><td>2022</td><td>1119221</td><td>Snapdragon 8+ Gen 1</td><td>50</td><td>999</td></tr>
+        <tr><td>nubia Red Magic 7S Pro</td><td>nubia</td><td>2022</td><td>1095968</td><td>Snapdragon 8+ Gen 1</td><td>64</td><td>1222</td></tr>
+        <tr><td>nubia Red Magic 7</td><td>nubia</td><td>2022</td><td>1059348</td><td>Snapdragon 8 Gen 1</td><td>64</td><td>599</td></tr>
+        <tr><td>Vivo X80</td><td>Vivo</td><td>2022</td><td>1001534</td><td>Dimensity 9000</td><td>50</td><td>449</td></tr>
+        <tr><td>Samsung Galaxy Z Fold4</td><td>Samsung</td><td>2022</td><td>998367</td><td>Snapdragon 8+ Gen 1</td><td>50</td><td>1349</td></tr>
+        <tr><td>Xiaomi 12 Pro</td><td>Xiaomi</td><td>2022</td><td>983175</td><td>Snapdragon 8 Gen 1</td><td>60</td><td>502</td></tr>
+        <tr><td>POCO F4 GT</td><td>POCO</td><td>2022</td><td>982486</td><td>Snapdragon 8 Gen 1</td><td>64</td><td>399</td></tr>
+        <tr><td>Realme GT2 Pro</td><td>Realme</td><td>2022</td><td>958330</td><td>Snapdragon 8 Gen 1</td><td>50</td><td>429</td></tr>
+        <tr><td>Xiaomi Redmi K50 Pro</td><td>Xiaomi</td><td>2022</td><td>950347</td><td>Dimensity 9000</td><td>108</td><td>349</td></tr>
+        <tr><td>Xiaomi 12</td><td>Xiaomi</td><td>2022</td><td>940679</td><td>Snapdragon 8 Gen 1</td><td>50</td><td>469</td></tr>
+        <tr><td>OnePlus 10T</td><td>OnePlus</td><td>2022</td><td>917973</td><td>Snapdragon 8+ Gen 1</td><td>50</td><td>460</td></tr>
+        <tr><td>Samsung Galaxy S22+</td><td>Samsung</td><td>2022</td><td>910351</td><td>Snapdragon 8 Gen 1</td><td>50</td><td>999</td></tr>
+        <tr><td>Samsung Galaxy S22 Ultra</td><td>Samsung</td><td>2022</td><td>896058</td><td>Snapdragon 8 Gen 1</td><td>40</td><td>899</td></tr>
+        <tr><td>Samsung Galaxy Z Flip4</td><td>Samsung</td><td>2022</td><td>895974</td><td>Snapdragon 8+ Gen 1</td><td>12</td><td>699</td></tr>
+        <tr><td>OnePlus 10 Pro</td><td>OnePlus</td><td>2022</td><td>882917</td><td>Snapdragon 8 Gen 1</td><td>48</td><td>769</td></tr>
+        <tr><td>Samsung Galaxy S22 Ultra Exynos</td><td>Samsung</td><td>2022</td><td>870715</td><td>Exynos 2200</td><td>108</td><td>1999</td></tr>
+        <tr><td>Oppo Find X5 Pro</td><td>Oppo</td><td>2022</td><td>838139</td><td>Snapdragon 8 Gen 1</td><td>50</td><td>749</td></tr>
+        <tr><td>Vivo iQOO 9 SE</td><td>Vivo</td><td>2022</td><td>833985</td><td>Snapdragon 888</td><td>48</td><td>999</td></tr>
+        <tr><td>Motorola Moto G200 5G</td><td>Motorola</td><td>2021</td><td>824358</td><td>Snapdragon 888 Plus</td><td>108</td><td>678</td></tr>
+        <tr><td>Apple iPhone 14 Pro</td><td>Apple</td><td>2022</td><td>952596</td><td>Apple A16 Bionic</td><td>48</td><td>1599</td></tr>
+        <tr><td>Apple iPhone 14 Pro Max</td><td>Apple</td><td>2022</td><td>950878</td><td>Apple A16 Bionic</td><td>48</td><td>2199</td></tr>
+        <tr><td>Apple iPhone 12 Pro Max</td><td>Apple</td><td>2021</td><td>715418</td><td>Apple A14 Bionic</td><td>12</td><td>1888</td></tr>
+        <tr><td>Apple iPhone 11 Pro Max</td><td>Apple</td><td>2020</td><td>638969</td><td>Apple A13 Bionic</td><td>12</td><td>1299</td></tr>
+        <tr><td>Google Pixel 6</td><td>Google</td><td>2020</td><td>694907</td><td>Google Tensor</td><td>50</td><td>854</td></tr>
+        <tr><td>LG V60 ThinQ</td><td>LG</td><td>2020</td><td>626555</td><td>Snapdragon 865</td><td>48</td><td>399</td></tr>
+        <tr><td>Nothing phone (1)</td><td>Nothing</td><td>2022</td><td>579096</td><td>Snapdragon 778G Plus</td><td>50</td><td>659</td></tr>
+
+
+    </table>
+</body>
+</html>
